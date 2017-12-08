@@ -1,19 +1,13 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-
 # Template
 *.iml
 .gradle
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/modules.xml
+
 .DS_Store
 /build
 /captures
