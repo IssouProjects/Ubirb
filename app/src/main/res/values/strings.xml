@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Ubirb</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_offers">Offres</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_offers</item>
+    </string-array>
+
+    <string name="title_offers">Offres</string>
+    <string name="title_home">Home</string>
 </resources>
