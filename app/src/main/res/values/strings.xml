@@ -3,7 +3,7 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
-    <string name="nav_item_home">Home</string>
+    <string name="nav_item_home">Accueil</string>
     <string name="nav_item_offers">Offres</string>
 
     <!-- navigation drawer item labels  -->
@@ -13,5 +13,5 @@
     </string-array>
 
     <string name="title_offers">Offres</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">Accueil</string>
 </resources>
