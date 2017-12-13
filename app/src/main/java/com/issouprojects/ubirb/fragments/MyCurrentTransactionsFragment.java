@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import com.issouprojects.ubirb.R;
 
 
-public class OfferFragment extends Fragment {
+public class MyCurrentTransactionsFragment extends Fragment {
 
-    public OfferFragment() {
+    public MyCurrentTransactionsFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class OfferFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_offers, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_mycurrenttransactions, container, false);
 
 
         // Inflate the layout for this fragment

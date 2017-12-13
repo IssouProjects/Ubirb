@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.issouprojects.ubirb.fragments.OffersFragment">
+    tools:context="com.issouprojects.ubirb.fragments.MessagesFragment">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textSize="45dp"
-        android:text="OFFRES"
+        android:text="Messages"
         android:textStyle="bold"/>
 
     <TextView
@@ -25,5 +25,6 @@
         android:textSize="12dp"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
-        android:text="Edit fragment_offers.xml to change the appearance" />
+        android:text="Edit fragment_messages.xml to change the appearance" />
+
 </RelativeLayout>
