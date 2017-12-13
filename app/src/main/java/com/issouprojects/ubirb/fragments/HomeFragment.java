@@ -1,4 +1,4 @@
-package com.issouprojects.ubirb;
+package com.issouprojects.ubirb.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.issouprojects.ubirb.R;
 
 
 public class HomeFragment extends Fragment {

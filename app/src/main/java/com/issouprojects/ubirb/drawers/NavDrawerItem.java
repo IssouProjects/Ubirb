@@ -1,4 +1,4 @@
-package com.issouprojects.ubirb;
+package com.issouprojects.ubirb.drawers;
 
 public class NavDrawerItem {
     private boolean showNotify;

@@ -10,6 +10,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.issouprojects.ubirb.drawers.FragmentDrawer;
+import com.issouprojects.ubirb.fragments.HomeFragment;
+import com.issouprojects.ubirb.fragments.OfferFragment;
+
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
