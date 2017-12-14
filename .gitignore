@@ -1,3 +1,10 @@
+# Custom
+app/.settings/org.eclipse.buildship.core.prefs
+.settings/org.eclipse.buildship.core.prefs
+.idea/vcs.xml
+.project
+app/.classpath
+
 *.iml
 .gradle
 /local.properties
