@@ -15,7 +15,8 @@ import com.issouprojects.ubirb.R;
 
 public class SignUp extends AppCompatActivity {
 
-    private Button start;
+    private Button signup;
+    private Button signin;
     private Intent intent;
 
 
@@ -24,12 +25,21 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        start = (Button) findViewById(R.id.signup);
+        signup = (Button) findViewById(R.id.signup);
+        signin = (Button) findViewById(R.id.signin);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(SignUp.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(SignUp.this, SignIn.class);
                 startActivity(intent);
             }
         });
