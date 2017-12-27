@@ -26,6 +26,7 @@
         <item>@string/nav_item_maplechan</item>
     </string-array>
 
+    <string name="title_signup">Inscription</string>
     <string name="title_home">Accueil</string>
     <string name="title_myprofile">Mon profil</string>
     <string name="title_messages">Messages</string>
