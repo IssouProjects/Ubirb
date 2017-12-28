@@ -94,6 +94,7 @@
                         android:layout_marginTop="28dp"
                         android:background="@color/colorPrimary"
                         android:text="Inscrivez-vous"
+                        android:textColor="@color/textColorPrimary"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -105,6 +106,7 @@
                         android:layout_marginTop="18dp"
                         android:background="@color/colorPrimary"
                         android:text="Connectez-vous"
+                        android:textColor="@color/textColorPrimary"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
