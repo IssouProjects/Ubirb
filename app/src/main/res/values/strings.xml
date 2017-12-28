@@ -27,7 +27,7 @@
     </string-array>
 
     <string name="title_signup">Inscription</string>
-    <string name="title_signin">Connection</string>
+    <string name="title_signin">Connexion</string>
     <string name="title_home">Accueil</string>
     <string name="title_myprofile">Mon profil</string>
     <string name="title_messages">Messages</string>
