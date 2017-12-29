@@ -6,4 +6,12 @@
     tools:context="com.issouprojects.ubirb.fragments.MyProfileFragment">
 
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8CD2AA">
+
+    </android.support.constraint.ConstraintLayout>
 </RelativeLayout>
