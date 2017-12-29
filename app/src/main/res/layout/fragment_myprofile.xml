@@ -12,7 +12,8 @@
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="#8CD2AA">
+        android:background="#8CD2AA"
+        android:id="@+id/constraintLayout">
 
         <ImageView
             android:id="@+id/imageView"
@@ -74,4 +75,13 @@
             app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraintLayout"
+        android:layout_centerHorizontal="true">
+
+    </android.support.constraint.ConstraintLayout>
+
 </RelativeLayout>
