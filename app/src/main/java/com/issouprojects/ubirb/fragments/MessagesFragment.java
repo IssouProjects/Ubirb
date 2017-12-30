@@ -1,6 +1,7 @@
 package com.issouprojects.ubirb.fragments;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -55,11 +56,17 @@ public class MessagesFragment extends Fragment {
         txtPierre = rootView.findViewById(R.id.txtPierre);
         imgPierre = rootView.findViewById(R.id.imgPierre);
 
+        tous.setTextColor(Color.WHITE);
+        offre.setTextColor(Color.LTGRAY);
+        recois.setTextColor(Color.LTGRAY);
+
         offre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 hideKevin(View.INVISIBLE);
                 hidePierre(View.INVISIBLE);
+                offre.setTextColor(Color.WHITE);
+                tous.setTextColor(Color.LTGRAY);
             }
         });
 
@@ -68,6 +75,8 @@ public class MessagesFragment extends Fragment {
             public void onClick(View v) {
                 hideKevin(View.VISIBLE);
                 hidePierre(View.VISIBLE);
+                tous.setTextColor(Color.WHITE);
+                offre.setTextColor(Color.LTGRAY);
             }
         });
 
