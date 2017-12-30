@@ -18,7 +18,7 @@
             android:background="@color/colorPrimary">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/tous"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
@@ -26,7 +26,7 @@
                 android:textColor="@android:color/darker_gray" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/offre"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -36,7 +36,7 @@
                 android:textColor="@android:color/darker_gray" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/recois"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
@@ -55,7 +55,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imgPaul"
                 android:layout_width="45dp"
                 android:layout_height="45sp"
                 android:layout_alignParentLeft="true"
@@ -67,88 +67,88 @@
                 android:src="@mipmap/ic_launcher_round" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imgKevin"
                 android:layout_width="45dp"
                 android:layout_height="45sp"
-                android:layout_alignLeft="@+id/imageView2"
-                android:layout_alignStart="@+id/imageView2"
-                android:layout_below="@+id/imageView2"
+                android:layout_alignLeft="@+id/imgPaul"
+                android:layout_alignStart="@+id/imgPaul"
+                android:layout_below="@+id/imgPaul"
                 android:layout_marginTop="21dp"
                 android:src="@mipmap/ic_launcher_round" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imgPierre"
                 android:layout_width="45dp"
                 android:layout_height="45sp"
-                android:layout_alignLeft="@+id/imageView3"
-                android:layout_alignStart="@+id/imageView3"
-                android:layout_below="@+id/textView7"
+                android:layout_alignLeft="@+id/imgKevin"
+                android:layout_alignStart="@+id/imgKevin"
+                android:layout_below="@+id/txtKevin"
                 android:layout_marginTop="24dp"
                 android:src="@mipmap/ic_launcher_round" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/nomPaul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignTop="@+id/imgPaul"
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_toEndOf="@+id/imageView2"
-                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imgPaul"
+                android:layout_toRightOf="@+id/imgPaul"
                 android:text="Paul Dupont"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtPaul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView"
-                android:layout_alignStart="@+id/textView"
-                android:layout_below="@+id/textView"
-                android:text="Ca te va dans 10 miunutes?"
+                android:layout_alignLeft="@+id/nomPaul"
+                android:layout_alignStart="@+id/nomPaul"
+                android:layout_below="@+id/nomPaul"
+                android:text="Ca te va dans 10 minutes?"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/nomKevin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView2"
-                android:layout_alignStart="@+id/textView2"
-                android:layout_alignTop="@+id/imageView3"
+                android:layout_alignLeft="@+id/txtPaul"
+                android:layout_alignStart="@+id/txtPaul"
+                android:layout_alignTop="@+id/imgKevin"
                 android:text="Jean Kevin"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/txtKevin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView3"
-                android:layout_alignLeft="@+id/textView6"
-                android:layout_alignStart="@+id/textView6"
+                android:layout_alignBottom="@+id/imgKevin"
+                android:layout_alignLeft="@+id/nomKevin"
+                android:layout_alignStart="@+id/nomKevin"
                 android:text="Ouais mdrrrr" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/nomPierre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView7"
-                android:layout_alignStart="@+id/textView7"
-                android:layout_alignTop="@+id/imageView5"
+                android:layout_alignLeft="@+id/txtKevin"
+                android:layout_alignStart="@+id/txtKevin"
+                android:layout_alignTop="@+id/imgPierre"
                 android:text="Pierre Lacour"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/txtPierre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView8"
-                android:layout_alignStart="@+id/textView8"
-                android:layout_below="@+id/textView8"
-                android:text="ok on se voit demain" />
+                android:layout_alignBottom="@+id/imgPierre"
+                android:layout_alignLeft="@+id/nomPierre"
+                android:layout_alignStart="@+id/nomPierre"
+                android:text="ok ba on se voit demain" />
         </RelativeLayout>
 
     </LinearLayout>
