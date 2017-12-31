@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,25 +7,260 @@
     tools:context="com.issouprojects.ubirb.fragments.MessagesFragment">
 
 
-    <TextView
-        android:id="@+id/label"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="45dp"
-        android:text="Messages"
-        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_below="@id/label"
-        android:layout_centerInParent="true"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="Edit fragment_messages.xml to change the appearance" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/tous"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Tous"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/offre"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:text="J'offre"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/recois"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@android:color/transparent"
+                android:text="Je reçois"
+                android:textColor="@android:color/darker_gray" />
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPaul"
+                android:layout_width="45dp"
+                android:layout_height="45sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="21dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgKevin"
+                android:layout_width="45dp"
+                android:layout_height="45sp"
+                android:layout_alignLeft="@+id/imgPaul"
+                android:layout_alignStart="@+id/imgPaul"
+                android:layout_below="@+id/imgPaul"
+                android:layout_marginTop="21dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgPierre"
+                android:layout_width="45dp"
+                android:layout_height="45sp"
+                android:layout_alignLeft="@+id/imgKevin"
+                android:layout_alignStart="@+id/imgKevin"
+                android:layout_below="@+id/txtKevin"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/nomPaul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgPaul"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/imgPaul"
+                android:layout_toRightOf="@+id/imgPaul"
+                android:text="Paul Dupont"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtPaul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomPaul"
+                android:layout_alignStart="@+id/nomPaul"
+                android:layout_below="@+id/nomPaul"
+                android:text="Ca te va dans 10 minutes?"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/nomKevin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtPaul"
+                android:layout_alignStart="@+id/txtPaul"
+                android:layout_alignTop="@+id/imgKevin"
+                android:text="Jean Kevin"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtKevin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgKevin"
+                android:layout_alignLeft="@+id/nomKevin"
+                android:layout_alignStart="@+id/nomKevin"
+                android:text="Ouais mdrrrr"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/nomPierre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtKevin"
+                android:layout_alignStart="@+id/txtKevin"
+                android:layout_alignTop="@+id/imgPierre"
+                android:text="Pierre Lacour"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtPierre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgPierre"
+                android:layout_alignLeft="@+id/nomPierre"
+                android:layout_alignStart="@+id/nomPierre"
+                android:text="ok ba on se voit demain"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgBosh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/imgKevin"
+                android:layout_alignEnd="@+id/imgPaul"
+                android:layout_alignLeft="@+id/imgPaul"
+                android:layout_alignRight="@+id/imgPaul"
+                android:layout_alignStart="@+id/imgPaul"
+                android:layout_alignTop="@+id/imgPaul"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imgXbox"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignLeft="@+id/imgPierre"
+                android:layout_alignStart="@+id/imgPierre"
+                android:layout_below="@+id/nomPierre"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/nomBosh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomPaul"
+                android:layout_alignStart="@+id/nomPaul"
+                android:layout_alignTop="@+id/nomPaul"
+                android:text="Aspirateur Bosch 150L"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imgPaul2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/nomKevin"
+                android:layout_toLeftOf="@+id/nomKevin"
+                android:layout_toStartOf="@+id/nomKevin"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/nomPaul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/nomKevin"
+                android:layout_alignRight="@+id/nomKevin"
+                android:layout_alignTop="@+id/imgPaul2"
+                android:text="Paul Dupont"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPaul2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomPaul2"
+                android:layout_alignStart="@+id/nomPaul2"
+                android:layout_below="@+id/nomPaul2"
+                android:text="Ca te va dans 10 minutes?"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgJean"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_above="@+id/nomPierre"
+                android:layout_toLeftOf="@+id/txtKevin"
+                android:layout_toStartOf="@+id/txtKevin"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/nomJean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtPaul2"
+                android:layout_alignStart="@+id/txtPaul2"
+                android:layout_alignTop="@+id/imgJean"
+                android:text="Jean-Louis Camus"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtJean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomJean"
+                android:layout_alignStart="@+id/nomJean"
+                android:layout_below="@+id/nomJean"
+                android:text="perfecto alberto" />
+
+            <TextView
+                android:id="@+id/nomXbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nomPierre"
+                android:layout_alignStart="@+id/nomPierre"
+                android:layout_below="@+id/nomPierre"
+                android:text="Manette XBox"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
