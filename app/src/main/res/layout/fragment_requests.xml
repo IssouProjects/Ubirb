@@ -41,29 +41,33 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:text="Chargeur Asus G551 JM"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="24sp"
-                    tools:layout_editor_absoluteX="11dp"
-                    tools:layout_editor_absoluteY="9dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Besoin d'un chargeur, le mien viens de lâcher, nor..."
-                    app:layout_constraintTop_toBottomOf="@+id/textView3"
-                    tools:layout_editor_absoluteX="11dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:text="15 rue des antonins (1km)"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4"
-                    tools:layout_editor_absoluteX="11dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
@@ -265,29 +269,33 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
                     android:text="Besoin d'aide pour déménager"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="24sp"
-                    tools:layout_editor_absoluteX="11dp"
-                    tools:layout_editor_absoluteY="9dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:text="J'ai besoin d'aide pour décharger ma voiture, j'arr..."
-                    app:layout_constraintTop_toBottomOf="@+id/textView8"
-                    tools:layout_editor_absoluteX="11dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Résidence D (900m)"
-                    app:layout_constraintTop_toBottomOf="@+id/textView12"
-                    tools:layout_editor_absoluteX="11dp" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
