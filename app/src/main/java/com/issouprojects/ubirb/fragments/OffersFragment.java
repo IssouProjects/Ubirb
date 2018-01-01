@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.issouprojects.ubirb.R;
+import com.issouprojects.ubirb.activities.OfferCreate;
 import com.issouprojects.ubirb.activities.OfferDetails;
 
 
@@ -48,8 +49,8 @@ public class OffersFragment extends Fragment {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getActivity(), RequestCreate.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getActivity(), OfferCreate.class);
+                startActivity(intent);
             }
         });
 
