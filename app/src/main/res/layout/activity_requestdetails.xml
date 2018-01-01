@@ -143,7 +143,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Besoin d’un chargeur, le miens viens de lâcher. Normalement j’en aurais besoin juste pour une charge d’ici à ce que celui que j’ai commandé arrive."
+                android:text="Besoin d’un chargeur, le mien vient de lâcher. Normalement j’en aurai besoin juste pour une charge d’ici à ce que celui que j’ai commandé arrive."
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
