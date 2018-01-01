@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chargeur Asus G551 JM"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="24sp"
                     tools:layout_editor_absoluteX="11dp"
                     tools:layout_editor_absoluteY="9dp" />
@@ -265,7 +265,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Besoin d'aide pour déménager"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="24sp"
                     tools:layout_editor_absoluteX="11dp"
                     tools:layout_editor_absoluteY="9dp" />
