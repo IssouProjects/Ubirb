@@ -169,10 +169,10 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="34dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/message_shape"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -196,14 +196,14 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="64dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/message_shape"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/textView48"
                 android:layout_width="132dp"
-                android:layout_height="31dp"
+                android:layout_height="26dp"
                 android:text="Oui, c'est bon"
                 android:textAlignment="center"
                 android:textColor="@color/textColorPrimary"
