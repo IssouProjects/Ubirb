@@ -8,9 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.issouprojects.ubirb.R;
+import com.issouprojects.ubirb.activities.EditProfile;
+
+import android.content.Intent;
+import android.widget.Button;
 
 
 public class MyProfileFragment extends Fragment {
+
+    private Button edit;
 
     public MyProfileFragment() {
         // Required empty public constructor
@@ -27,6 +33,15 @@ public class MyProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_myprofile, container, false);
 
+        edit = rootView.findViewById(R.id.editProfile);
+
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EditProfile.class);
+                startActivity(intent);
+            }
+        });
 
         // Inflate the layout for this fragment
         return rootView;
