@@ -19,7 +19,8 @@
     </padding>
 
     <corners
-        android:radius="11dp"   >
+        android:radius="11dp"
+        android:bottomRightRadius="0dp">
     </corners>
 
 </shape>
