@@ -127,6 +127,22 @@ public class MessagesFragment extends Fragment {
             }
         });
 
+        nomPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        txtPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return rootView;
     }
