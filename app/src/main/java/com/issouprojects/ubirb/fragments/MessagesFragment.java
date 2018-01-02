@@ -143,6 +143,30 @@ public class MessagesFragment extends Fragment {
             }
         });
 
+        imgPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        nomPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        txtPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return rootView;
     }
