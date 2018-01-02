@@ -2,14 +2,45 @@ package com.issouprojects.ubirb.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import com.issouprojects.ubirb.R;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class EditProfile extends AppCompatActivity {
+
+    ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
+    private SimpleAdapter sa;
+
+    private String[][] settings = {
+        {"Prénom", "Paul"},
+        {"Nom", "Dupont"},
+        {"Adresse", "Résidence C"},
+        {"Adresse email", "pauldupont@outlook.fr"},
+        {"Téléphone", "06 00 00 00 00"},
+        {"Mot de passe", "******"}
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
+
+        HashMap<String,String> item;
+        for(int i = 0; i< settings.length; i++){
+            item = new HashMap<String,String>();
+            item.put( "line1", settings[i][0]);
+            item.put( "line2", settings[i][1]);
+            list.add( item );
+        }
+
+        sa = new SimpleAdapter(this, list,
+                R.layout.twolines,
+                new String[] { "line1","line2" },
+                new int[] {R.id.line_a, R.id.line_b});
+        ((ListView)findViewById(R.id.list)).setAdapter(sa);
     }
 }
