@@ -2,6 +2,8 @@ package com.issouprojects.ubirb.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -14,6 +16,7 @@ public class EditProfile extends AppCompatActivity {
 
     ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
     private SimpleAdapter sa;
+    private ImageButton back;
 
     private String[][] settings = {
         {"Prénom", "Paul"},
@@ -42,5 +45,14 @@ public class EditProfile extends AppCompatActivity {
                 new String[] { "line1","line2" },
                 new int[] {R.id.line_a, R.id.line_b});
         ((ListView)findViewById(R.id.list)).setAdapter(sa);
+
+        back = (ImageButton) findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
