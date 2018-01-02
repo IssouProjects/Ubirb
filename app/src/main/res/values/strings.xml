@@ -33,8 +33,8 @@
     <string name="title_messages">Messages</string>
     <string name="title_myoffers">Mes offres</string>
     <string name="title_myrequests">Mes demandes</string>
-    <string name="title_offers">Offres</string>
-    <string name="title_requests">Demandes</string>
-    <string name="title_mycurrenttransactions">Mes transactions en cours</string>
+    <string name="title_offers">Offres publiques</string>
+    <string name="title_requests">Demandes publiques</string>
+    <string name="title_mycurrenttransactions">Mes échanges en cours</string>
     <string name="title_maplechan">MapleChan</string>
 </resources>
