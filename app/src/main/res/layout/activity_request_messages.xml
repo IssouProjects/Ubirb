@@ -168,6 +168,29 @@
         app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout1">
 
         <android.support.constraint.ConstraintLayout
+            android:layout_width="237dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/received_message_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="228dp"
+                android:layout_height="40dp"
+                android:text="Ca te va dans 10 minutes ?"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:layout_marginStart="8dp"
