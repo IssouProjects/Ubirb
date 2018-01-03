@@ -54,7 +54,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Chaise"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         app:layout_constraintStart_toEndOf="@+id/imageView112"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,8 +91,8 @@
 
                             <ImageView
                                 android:id="@+id/imageView142"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="8dp"
@@ -109,7 +109,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="25dp"
                                 android:text="Michel Dubresil"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/imageView142"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -121,7 +121,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="9/10"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/imageView162" />
 
@@ -132,7 +132,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="65%"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -206,7 +206,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Aspirateur Bosch 150L"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         app:layout_constraintStart_toEndOf="@+id/imageView102"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -243,8 +243,8 @@
 
                             <ImageView
                                 android:id="@+id/imageView52"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="8dp"
@@ -261,7 +261,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="25dp"
                                 android:text="Jean Claudius"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/imageView52"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -273,7 +273,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="8/10"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/imageView72" />
 
@@ -284,7 +284,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="35%"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -518,7 +518,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Aspirateur Bosch 150L"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         app:layout_constraintStart_toEndOf="@+id/imageView10"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -555,8 +555,8 @@
 
                             <ImageView
                                 android:id="@+id/imageView5"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="8dp"
@@ -573,7 +573,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="25dp"
                                 android:text="Jean Claudius"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -585,7 +585,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="8/10"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/imageView72" />
 
@@ -596,7 +596,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="35%"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -768,7 +768,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Chaise"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="24sp"
+                        android:textSize="20sp"
                         app:layout_constraintStart_toEndOf="@+id/imageView11"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -805,8 +805,8 @@
 
                             <ImageView
                                 android:id="@+id/imageView14"
-                                android:layout_width="56dp"
-                                android:layout_height="56dp"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_marginBottom="8dp"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="8dp"
@@ -823,7 +823,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginTop="25dp"
                                 android:text="Michel Dubresil"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/imageView14"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -835,7 +835,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="9/10"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/imageView16" />
 
@@ -846,7 +846,7 @@
                                 android:layout_marginBottom="24dp"
                                 android:layout_marginEnd="16dp"
                                 android:text="65%"
-                                android:textSize="18sp"
+                                android:textSize="16sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent" />
 

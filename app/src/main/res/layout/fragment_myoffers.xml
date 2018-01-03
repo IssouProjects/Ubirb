@@ -46,9 +46,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="2 raquettes de ping..."
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
+                    android:text="2 raquettes de ping pong"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +59,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="0 demande en cours"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
                     app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -70,7 +69,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Bâtiment C (0m)"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
                     app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -93,7 +91,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:text="Paul Dupont"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView5" />
 
@@ -101,10 +99,10 @@
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="14dp"
                     android:layout_marginRight="24dp"
                     android:text="7/10"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView10" />
 
@@ -125,7 +123,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginRight="16dp"
                     android:text="54%"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
 
@@ -174,8 +172,8 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Table de ping pong"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -186,7 +184,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="0 demande en cours"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
                     app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -197,7 +194,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Bâtiment C (0m)"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
                     app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -220,7 +216,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:text="Paul Dupont"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView8" />
 
@@ -228,10 +224,10 @@
                     android:id="@+id/textView39"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="14dp"
                     android:layout_marginRight="24dp"
                     android:text="7/10"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView16" />
 
@@ -252,7 +248,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginRight="16dp"
                     android:text="54%"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
 
@@ -301,8 +297,8 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Narguilé"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView11"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -313,7 +309,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="0 demande en cours"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView11"
                     app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -324,7 +319,6 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="Bâtiment C (0m)"
-                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@+id/imageView11"
                     app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -347,7 +341,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:text="Paul Dupont"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView12" />
 
@@ -355,10 +349,10 @@
                     android:id="@+id/textView35"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="14dp"
                     android:layout_marginRight="24dp"
                     android:text="7/10"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView13" />
 
@@ -379,7 +373,7 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginRight="16dp"
                     android:text="54%"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
 
