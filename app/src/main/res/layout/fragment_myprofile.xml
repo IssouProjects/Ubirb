@@ -177,7 +177,7 @@
                             <ImageView
                                 android:id="@+id/imageOffer1"
                                 android:layout_marginTop="8dp"
-                                android:layout_width="50"
+                                android:layout_width="50dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/raquette_pingpong"
@@ -188,7 +188,7 @@
 
                             <ImageView
                                 android:id="@+id/imageOffer2"
-                                android:layout_width="50"
+                                android:layout_width="50dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="8dp"
@@ -200,7 +200,7 @@
 
                             <ImageView
                                 android:id="@+id/imageOffer3"
-                                android:layout_width="50"
+                                android:layout_width="50dp"
                                 android:layout_marginRight="8dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_height="match_parent"
