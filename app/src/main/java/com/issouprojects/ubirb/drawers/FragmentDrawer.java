@@ -2,7 +2,6 @@ package com.issouprojects.ubirb.drawers;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.issouprojects.ubirb.R;
 
@@ -28,7 +26,8 @@ public class FragmentDrawer extends Fragment {
 
     private static String TAG = FragmentDrawer.class.getSimpleName();
 
-    private RecyclerView recyclerView;
+    private RecyclerView personalRecyclerView;
+    private RecyclerView generalRecyclerView;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private NavigationDrawerAdapter adapter;
@@ -75,12 +74,17 @@ public class FragmentDrawer extends Fragment {
                              Bundle savedInstanceState) {
         // Inflating view layout
         View layout = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
-        recyclerView = (RecyclerView) layout.findViewById(R.id.drawerList);
+        personalRecyclerView = (RecyclerView) layout.findViewById(R.id.drawerListOne);
+        generalRecyclerView =(RecyclerView) layout.findViewById(R.id.drawerListTwo);
 
         adapter = new NavigationDrawerAdapter(getActivity(), getData());
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new ClickListener() {
+        personalRecyclerView.setAdapter(adapter);
+        generalRecyclerView.setAdapter(adapter);
+
+        personalRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        generalRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        ClickListener aClickListener =new ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 drawerListener.onDrawerItemSelected(view, position);
@@ -91,7 +95,9 @@ public class FragmentDrawer extends Fragment {
             public void onLongClick(View view, int position) {
 
             }
-        }));
+        };
+        personalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), personalRecyclerView, aClickListener));
+        generalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), personalRecyclerView, aClickListener));
 
         return layout;
     }
