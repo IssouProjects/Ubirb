@@ -64,7 +64,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="21dp"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/bubulle_pierre_lacour"
                 android:visibility="visible" />
 
             <ImageView
@@ -75,7 +75,7 @@
                 android:layout_alignStart="@+id/imgPaul"
                 android:layout_below="@+id/imgPaul"
                 android:layout_marginTop="21dp"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/bubulle_kevin"
                 android:visibility="visible" />
 
             <ImageView
@@ -86,7 +86,7 @@
                 android:layout_alignStart="@+id/imgKevin"
                 android:layout_below="@+id/txtKevin"
                 android:layout_marginTop="24dp"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/bubulle_pierre_descraques"
                 android:visibility="visible" />
 
             <TextView
@@ -98,7 +98,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@+id/imgPaul"
                 android:layout_toRightOf="@+id/imgPaul"
-                android:text="Paul Dupont"
+                android:text="Pierre Lacour"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -122,7 +122,7 @@
                 android:layout_alignLeft="@+id/txtPaul"
                 android:layout_alignStart="@+id/txtPaul"
                 android:layout_alignTop="@+id/imgKevin"
-                android:text="Jean Kevin"
+                android:text="Kevin Mercier"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:visibility="visible" />
@@ -144,7 +144,7 @@
                 android:layout_alignLeft="@+id/txtKevin"
                 android:layout_alignStart="@+id/txtKevin"
                 android:layout_alignTop="@+id/imgPierre"
-                android:text="Pierre Lacour"
+                android:text="Pierre Descraques"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:visibility="visible" />
@@ -169,7 +169,8 @@
                 android:layout_alignRight="@+id/imgPaul"
                 android:layout_alignStart="@+id/imgPaul"
                 android:layout_alignTop="@+id/imgPaul"
-                android:src="@mipmap/ic_launcher" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/raquette_pingpong" />
 
             <ImageView
                 android:id="@+id/imgXbox"
@@ -178,7 +179,8 @@
                 android:layout_alignLeft="@+id/imgPierre"
                 android:layout_alignStart="@+id/imgPierre"
                 android:layout_below="@+id/nomPierre"
-                android:src="@mipmap/ic_launcher" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/manette_xbox" />
 
             <TextView
                 android:id="@+id/nomBosh"
@@ -187,7 +189,7 @@
                 android:layout_alignLeft="@+id/nomPaul"
                 android:layout_alignStart="@+id/nomPaul"
                 android:layout_alignTop="@+id/nomPaul"
-                android:text="Aspirateur Bosch 150L"
+                android:text="2 raquettes de ping pong "
                 android:textSize="24sp" />
 
             <ImageView
@@ -197,7 +199,7 @@
                 android:layout_alignBottom="@+id/nomKevin"
                 android:layout_toLeftOf="@+id/nomKevin"
                 android:layout_toStartOf="@+id/nomKevin"
-                android:src="@mipmap/ic_launcher_round" />
+                android:src="@drawable/bubulle_pierre_lacour" />
 
             <TextView
                 android:id="@+id/nomPaul2"
@@ -229,7 +231,7 @@
                 android:layout_above="@+id/nomPierre"
                 android:layout_toLeftOf="@+id/txtKevin"
                 android:layout_toStartOf="@+id/txtKevin"
-                android:src="@mipmap/ic_launcher_round" />
+                android:src="@drawable/bubulle_kevin" />
 
             <TextView
                 android:id="@+id/nomJean"
@@ -238,7 +240,7 @@
                 android:layout_alignLeft="@+id/txtPaul2"
                 android:layout_alignStart="@+id/txtPaul2"
                 android:layout_alignTop="@+id/imgJean"
-                android:text="Jean-Louis Camus"
+                android:text="Kévin Mercier"
                 android:textColor="@android:color/black" />
 
             <TextView
@@ -248,7 +250,7 @@
                 android:layout_alignLeft="@+id/nomJean"
                 android:layout_alignStart="@+id/nomJean"
                 android:layout_below="@+id/nomJean"
-                android:text="perfecto alberto" />
+                android:text="Ouais mdrrrr" />
 
             <TextView
                 android:id="@+id/nomXbox"
