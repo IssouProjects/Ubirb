@@ -20,9 +20,9 @@
         <item>@string/nav_item_messages</item>
         <item>@string/nav_item_myoffers</item>
         <item>@string/nav_item_myrequests</item>
+        <item>@string/nav_item_mycurrenttransactions</item>
         <item>@string/nav_item_offers</item>
         <item>@string/nav_item_requests</item>
-        <item>@string/nav_item_mycurrenttransactions</item>
         <item>@string/nav_item_maplechan</item>
     </string-array>
 
