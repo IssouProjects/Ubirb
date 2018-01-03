@@ -19,7 +19,7 @@
             android:layout_marginBottom="9dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Paul"
+            android:text="Pierre Lacour"
             android:textAlignment="viewStart"
             android:textColor="@color/textColorPrimary"
             android:textSize="20sp"
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Prêt : Aspirateur Bosch 150L"
+            android:text="Prêt : 2 raquettes de ping pong"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
