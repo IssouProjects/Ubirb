@@ -20,7 +20,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CardViewF">
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:id="@+id/details"
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Chargeur Asus G551 JM"
+                    android:text="Appareil à raclette"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="24sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,10 +50,10 @@
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
-                    android:layout_height="15dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Besoin d'un chargeur, le mien viens de lâcher, nor..."
+                    android:text="Je cherche un appareil à raclette pour faire une soirée..."
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="15 rue des antonins (1km)"
+                    android:text="Résidence C (0m)"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -80,12 +80,12 @@
 
                         <ImageView
                             android:id="@+id/imageView5"
-                            android:layout_width="56dp"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="4dp"
                             android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:src="@mipmap/ic_launcher_round"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/bubulle_paul_dupont"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -94,11 +94,11 @@
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="23dp"
+                            android:layout_marginBottom="16dp"
                             android:layout_marginStart="8dp"
-                            android:layout_marginTop="25dp"
-                            android:text="Jérémy Duboy"
-                            android:textSize="18sp"
+                            android:layout_marginTop="16dp"
+                            android:text="Paul Dupont"
+                            android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/imageView5"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -107,21 +107,21 @@
                             android:id="@+id/textView10"
                             android:layout_width="38dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="24dp"
+                            android:layout_marginBottom="16dp"
                             android:layout_marginEnd="16dp"
-                            android:text="8/10"
-                            android:textSize="18sp"
+                            android:text="7/10"
+                            android:textSize="16dp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textView11" />
+                            app:layout_constraintEnd_toStartOf="@+id/imageView7" />
 
                         <TextView
                             android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="24dp"
+                            android:layout_marginBottom="16dp"
                             android:layout_marginEnd="16dp"
-                            android:text="35%"
-                            android:textSize="18sp"
+                            android:text="54%"
+                            android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -129,11 +129,21 @@
                             android:id="@+id/imageView6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="21dp"
+                            android:layout_marginBottom="15dp"
                             android:layout_marginEnd="8dp"
-                            android:src="@android:drawable/btn_star_big_on"
+                            android:src="@drawable/ic_etoile"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textView10" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/logo_karma"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView11" />
 
                     </android.support.constraint.ConstraintLayout>
                 </android.support.v7.widget.CardView>
