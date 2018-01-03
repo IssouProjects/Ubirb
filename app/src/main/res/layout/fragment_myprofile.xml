@@ -176,30 +176,36 @@
 
                             <ImageView
                                 android:id="@+id/imageOffer1"
-                                android:layout_width="70dp"
                                 android:layout_marginTop="8dp"
+                                android:layout_width="50"
+                                android:layout_marginRight="8dp"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/raquette_pingpong"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
                                 android:id="@+id/imageOffer2"
-                                android:layout_width="70dp"
+                                android:layout_width="50"
+                                android:layout_marginRight="8dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="8dp"
                                 android:src="@drawable/table_pingpong"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
                                 android:id="@+id/imageOffer3"
-                                android:layout_width="70dp"
+                                android:layout_width="50"
+                                android:layout_marginRight="8dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/chicha"
+                                android:scaleType="centerCrop"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
