@@ -225,7 +225,7 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView8" />
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/textView39"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
                     android:layout_marginBottom="16dp"
@@ -233,20 +233,20 @@
                     android:text="7/10"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView10" />
+                    app:layout_constraintEnd_toStartOf="@+id/imageView16" />
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/imageView16"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginBottom="16dp"
                     android:layout_marginRight="8dp"
                     android:src="@drawable/logo_karma"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView30" />
+                    app:layout_constraintEnd_toStartOf="@+id/textView40" />
 
                 <TextView
-                    android:id="@+id/textView30"
+                    android:id="@+id/textView40"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
@@ -257,14 +257,14 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/imageView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:layout_marginRight="8dp"
                     android:src="@drawable/ic_etoile"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView29" />
+                    app:layout_constraintEnd_toStartOf="@+id/textView39" />
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
