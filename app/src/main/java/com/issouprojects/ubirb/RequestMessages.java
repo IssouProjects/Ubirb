@@ -1,5 +1,6 @@
 package com.issouprojects.ubirb;
 
+import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.issouprojects.ubirb.activities.FinDePret;
+
 public class RequestMessages extends AppCompatActivity {
 
     private ImageButton back;
     private Button accept;
     private ConstraintLayout demandeDePret;
     private ConstraintLayout finDePret;
+    private Button endTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,7 @@ public class RequestMessages extends AppCompatActivity {
         accept = findViewById(R.id.acceptButton);
         demandeDePret = findViewById(R.id.demandedepret);
         finDePret = findViewById(R.id.findepret);
+        endTransaction = findViewById(R.id.endTransaction);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +41,14 @@ public class RequestMessages extends AppCompatActivity {
             public void onClick(View v) {
                 demandeDePret.setVisibility(View.INVISIBLE);
                 finDePret.setVisibility(View.VISIBLE);
+            }
+        });
+
+        endTransaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RequestMessages.this, FinDePret.class);
+                startActivity(intent);
             }
         });
     }
