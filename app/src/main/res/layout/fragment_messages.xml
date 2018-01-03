@@ -144,7 +144,7 @@
                 android:layout_alignLeft="@+id/txtKevin"
                 android:layout_alignStart="@+id/txtKevin"
                 android:layout_alignTop="@+id/imgPierre"
-                android:text="Pierre Lacour"
+                android:text="Pierre Descraques"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:visibility="visible" />
