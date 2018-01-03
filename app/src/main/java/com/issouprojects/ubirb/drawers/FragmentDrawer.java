@@ -1,6 +1,8 @@
 package com.issouprojects.ubirb.drawers;
 
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.issouprojects.ubirb.R;
 
@@ -31,6 +34,7 @@ public class FragmentDrawer extends Fragment {
     private NavigationDrawerAdapter adapter;
     private View containerView;
     private static String[] titles = null;
+    private static TypedArray icons = null;
     private FragmentDrawerListener drawerListener;
 
     public FragmentDrawer() {
@@ -49,6 +53,7 @@ public class FragmentDrawer extends Fragment {
         for (int i = 0; i < titles.length; i++) {
             NavDrawerItem navItem = new NavDrawerItem();
             navItem.setTitle(titles[i]);
+            navItem.setIcon(icons.getDrawable(i));
             data.add(navItem);
         }
         return data;
@@ -60,6 +65,9 @@ public class FragmentDrawer extends Fragment {
 
         // drawer labels
         titles = getActivity().getResources().getStringArray(R.array.nav_drawer_labels);
+
+        // drawer icons
+        icons = getActivity().getResources().obtainTypedArray(R.array.nav_drawer_icons);
     }
 
     @Override

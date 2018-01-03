@@ -1,6 +1,7 @@
 package com.issouprojects.ubirb.fragments;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.issouprojects.ubirb.R;
+import com.issouprojects.ubirb.RequestMessages;
 
 
 public class MessagesFragment extends Fragment {
@@ -114,6 +116,54 @@ public class MessagesFragment extends Fragment {
                 hideOffre(View.INVISIBLE);
                 tous.setTextColor(Color.WHITE);
                 offre.setTextColor(Color.LTGRAY);
+            }
+        });
+
+        imgPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        nomPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        txtPaul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        imgPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        nomPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
+            }
+        });
+
+        txtPaul2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RequestMessages.class);
+                startActivity(intent);
             }
         });
 

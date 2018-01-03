@@ -1,6 +1,7 @@
 package com.issouprojects.ubirb.drawers;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +40,13 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         NavDrawerItem current = data.get(position);
+
         holder.title.setText(current.getTitle());
+
+        Drawable icon = current.getIcon();
+        holder.title.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+        icon.setBounds(0, 0, (int)(holder.title.getMeasuredHeight()*0.5), (int)(0.5*holder.title.getMeasuredHeight()));
+        holder.title.setCompoundDrawables(icon, null, null, null);
     }
 
     @Override
@@ -48,6 +55,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
+
         TextView title;
 
         public MyViewHolder(View itemView) {
