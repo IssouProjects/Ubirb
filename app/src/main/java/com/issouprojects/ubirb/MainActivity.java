@@ -45,7 +45,17 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         drawerFragment.setDrawerListener(this);
 
         // display the first navigation drawer view on app launch
-        displayView(0);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String fragment = extras.getString("fragment");
+            if(fragment.equals("messages")) {
+                displayView(2);
+            }
+        }
+        else {
+            displayView(0);
+        }
     }
 
 
