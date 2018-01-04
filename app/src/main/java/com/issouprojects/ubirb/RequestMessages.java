@@ -14,6 +14,7 @@ public class RequestMessages extends AppCompatActivity {
 
     private ImageButton back;
     private Button accept;
+    private Button decline;
     private ConstraintLayout demandeDePret;
     private ConstraintLayout finDePret;
     private Button endTransaction;
@@ -25,6 +26,7 @@ public class RequestMessages extends AppCompatActivity {
 
         back = (ImageButton) findViewById(R.id.back);
         accept = findViewById(R.id.acceptButton);
+        decline = findViewById(R.id.decline);
         demandeDePret = findViewById(R.id.demandedepret);
         finDePret = findViewById(R.id.findepret);
         endTransaction = findViewById(R.id.endTransaction);
@@ -41,6 +43,13 @@ public class RequestMessages extends AppCompatActivity {
             public void onClick(View v) {
                 demandeDePret.setVisibility(View.INVISIBLE);
                 finDePret.setVisibility(View.VISIBLE);
+            }
+        });
+
+        decline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
