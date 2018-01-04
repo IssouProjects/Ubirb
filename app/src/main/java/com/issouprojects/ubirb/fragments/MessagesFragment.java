@@ -30,6 +30,10 @@ public class MessagesFragment extends Fragment {
     private TextView txtPierre;
     private ImageView imgPierre;
 
+    private TextView nomPierre2;
+    private TextView txtPierre2;
+    private ImageView imgPierre2;
+
     private TextView nomPaul;
     private TextView txtPaul;
     private ImageView imgPaul;
@@ -47,6 +51,9 @@ public class MessagesFragment extends Fragment {
 
     private TextView nomXbox;
     private ImageView imgXbox;
+
+    private TextView nomAspi;
+    private ImageView imgAspi;
 
     public MessagesFragment() {
         // Required empty public constructor
@@ -75,6 +82,10 @@ public class MessagesFragment extends Fragment {
         txtPierre = rootView.findViewById(R.id.txtPierre);
         imgPierre = rootView.findViewById(R.id.imgPierre);
 
+        nomPierre2 = rootView.findViewById(R.id.nomPierre2);
+        txtPierre2 = rootView.findViewById(R.id.txtPierre2);
+        imgPierre2 = rootView.findViewById(R.id.imgPierre2);
+
         nomPaul = rootView.findViewById(R.id.nomPaul);
         txtPaul = rootView.findViewById(R.id.txtPaul);
         imgPaul = rootView.findViewById(R.id.imgPaul);
@@ -93,19 +104,25 @@ public class MessagesFragment extends Fragment {
         nomXbox = rootView.findViewById(R.id.nomXbox);
         imgXbox = rootView.findViewById(R.id.imgXbox);
 
+        nomAspi = rootView.findViewById(R.id.nomAspi);
+        imgAspi = rootView.findViewById(R.id.imgAspi);
+
         tous.setTextColor(Color.WHITE);
         offre.setTextColor(Color.LTGRAY);
         recois.setTextColor(Color.LTGRAY);
 
         hideOffre(View.INVISIBLE);
+        hideRecois(View.INVISIBLE);
 
         offre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 hideTous(View.INVISIBLE);
                 hideOffre(View.VISIBLE);
+                hideRecois(View.INVISIBLE);
                 offre.setTextColor(Color.WHITE);
                 tous.setTextColor(Color.LTGRAY);
+                recois.setTextColor(Color.LTGRAY);
             }
         });
 
@@ -114,10 +131,26 @@ public class MessagesFragment extends Fragment {
             public void onClick(View v) {
                 hideTous(View.VISIBLE);
                 hideOffre(View.INVISIBLE);
+                hideRecois(View.INVISIBLE);
                 tous.setTextColor(Color.WHITE);
                 offre.setTextColor(Color.LTGRAY);
+                recois.setTextColor(Color.LTGRAY);
             }
         });
+
+        recois.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideTous(View.INVISIBLE);
+                hideOffre(View.INVISIBLE);
+                hideRecois(View.VISIBLE);
+                tous.setTextColor(Color.LTGRAY);
+                offre.setTextColor(Color.LTGRAY);
+                recois.setTextColor(Color.WHITE);
+            }
+        });
+
+
 
         imgPaul.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -167,6 +200,30 @@ public class MessagesFragment extends Fragment {
             }
         });
 
+        imgPierre2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(getActivity(), RequestMessages.class);
+                //startActivity(intent);
+            }
+        });
+
+        nomPierre2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(getActivity(), RequestMessages.class);
+                //startActivity(intent);
+            }
+        });
+
+        txtPierre2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(getActivity(), RequestMessages.class);
+                //startActivity(intent);
+            }
+        });
+
         // Inflate the layout for this fragment
         return rootView;
     }
@@ -209,5 +266,16 @@ public class MessagesFragment extends Fragment {
 
         nomXbox.setVisibility(visibility);
         imgXbox.setVisibility(visibility);
+    }
+
+    private void hideRecois(int visibility){
+
+        nomPierre2.setVisibility(visibility);
+        txtPierre2.setVisibility(visibility);
+        imgPierre2.setVisibility(visibility);
+
+        nomAspi.setVisibility(visibility);
+        imgAspi.setVisibility(visibility);
+
     }
 }
