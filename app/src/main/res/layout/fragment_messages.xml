@@ -211,7 +211,7 @@
                 android:layout_alignEnd="@+id/nomKevin"
                 android:layout_alignRight="@+id/nomKevin"
                 android:layout_alignTop="@+id/imgPaul2"
-                android:text="Paul Dupont"
+                android:text="Pierre Lacour"
                 android:textColor="@android:color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
