@@ -34,6 +34,7 @@ public class FinDePret extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FinDePret.this, MainActivity.class);
+                intent.putExtra("fragment", "messages");
                 startActivity(intent);
             }
         });
