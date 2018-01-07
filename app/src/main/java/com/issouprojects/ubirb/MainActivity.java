@@ -1,5 +1,6 @@
 package com.issouprojects.ubirb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.issouprojects.ubirb.drawers.FragmentDrawer;
 import com.issouprojects.ubirb.fragments.HomeFragment;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
+    private ImageView profileView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +38,19 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         setContentView(R.layout.activity_main);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        profileView = findViewById(R.id.profileView);
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        profileView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("fragment", "monProfil");
+                startActivity(intent);
+            }
+        });
 
         drawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
@@ -51,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             String fragment = extras.getString("fragment");
             if(fragment.equals("messages")) {
                 displayView(2);
+            }
+            else if(fragment.equals("monProfil")) {
+                displayView(1);
             }
         }
         else {
