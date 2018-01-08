@@ -66,6 +66,12 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             else if(fragment.equals("monProfil")) {
                 displayView(0);
             }
+            else if(fragment.equals("mesOffres")) {
+                displayView(2);
+            }
+            else if(fragment.equals("mesDemandes")) {
+                displayView(3);
+            }
         }
         else {
             displayView(5);
