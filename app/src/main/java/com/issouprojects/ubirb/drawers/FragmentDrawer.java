@@ -100,8 +100,20 @@ public class FragmentDrawer extends Fragment {
 
             }
         };
+        ClickListener anotherClickListener =new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                drawerListener.onDrawerItemSelected(view, position+6);
+                mDrawerLayout.closeDrawer(containerView);
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        };
         personalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), personalRecyclerView, aClickListener));
-        generalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), personalRecyclerView, aClickListener));
+        generalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), generalRecyclerView, anotherClickListener));
 
         return layout;
     }

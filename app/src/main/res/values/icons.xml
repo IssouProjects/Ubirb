@@ -14,7 +14,6 @@
     <integer-array name="nav_drawer_icon2">
         <item>@drawable/ic_logo_offre_publique</item>
         <item>@drawable/ic_logo_demande_publiques</item>
-        <item>@drawable/ic_logo_maplechan</item>
     </integer-array>
 
 </resources>

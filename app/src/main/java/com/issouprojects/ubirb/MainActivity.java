@@ -12,7 +12,6 @@ import android.view.View;
 
 import com.issouprojects.ubirb.drawers.FragmentDrawer;
 import com.issouprojects.ubirb.fragments.HomeFragment;
-import com.issouprojects.ubirb.fragments.MapleChanFragment;
 import com.issouprojects.ubirb.fragments.MessagesFragment;
 import com.issouprojects.ubirb.fragments.MyCurrentTransactionsFragment;
 import com.issouprojects.ubirb.fragments.MyOffersFragment;
@@ -90,20 +89,16 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                 title = getString(R.string.title_myrequests);
                 break;
             case 5:
-                fragment = new OffersFragment();
-                title = getString(R.string.title_offers);
-                break;
-            case 6:
-                fragment = new RequestsFragment();
-                title = getString(R.string.title_requests);
-                break;
-            case 7:
                 fragment = new MyCurrentTransactionsFragment();
                 title = getString(R.string.title_mycurrenttransactions);
                 break;
-            case 8:
-                fragment = new MapleChanFragment();
-                title = getString(R.string.title_maplechan);
+            case 6:
+                fragment = new OffersFragment();
+                title = getString(R.string.title_offers);
+                break;
+            case 7:
+                fragment = new RequestsFragment();
+                title = getString(R.string.title_requests);
                 break;
             default:
                 break;

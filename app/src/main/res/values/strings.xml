@@ -26,7 +26,6 @@
     <string-array name="nav_drawer_label2">
         <item>@string/nav_item_offers</item>
         <item>@string/nav_item_requests</item>
-        <item>@string/nav_item_maplechan</item>
     </string-array>
 
     <string name="title_signup">Inscription</string>
