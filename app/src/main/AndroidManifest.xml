@@ -58,8 +58,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".RequestMessages"></activity>
-        <activity android:name=".activities.EditProfile"></activity>
+        <activity android:name=".RequestMessages" />
+        <activity android:name=".activities.EditProfile" />
+        <activity android:name=".activities.FinDePret"></activity>
+        <activity android:name=".activities.PublicProfile"></activity>
     </application>
 
 </manifest>
