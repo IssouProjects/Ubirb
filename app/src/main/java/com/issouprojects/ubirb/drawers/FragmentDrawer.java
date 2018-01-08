@@ -2,7 +2,6 @@ package com.issouprojects.ubirb.drawers;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.issouprojects.ubirb.R;
 
@@ -28,13 +26,15 @@ public class FragmentDrawer extends Fragment {
 
     private static String TAG = FragmentDrawer.class.getSimpleName();
 
-    private RecyclerView recyclerView;
+    private RecyclerView personalRecyclerView;
+    private RecyclerView generalRecyclerView;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
-    private NavigationDrawerAdapter adapter;
+    private NavigationDrawerAdapter adapter1;
+    private NavigationDrawerAdapter adapter2;
     private View containerView;
-    private static String[] titles = null;
-    private static TypedArray icons = null;
+    private static String[][] titles = null;
+    private static TypedArray[] icons = null;
     private FragmentDrawerListener drawerListener;
 
     public FragmentDrawer() {
@@ -45,15 +45,13 @@ public class FragmentDrawer extends Fragment {
         this.drawerListener = listener;
     }
 
-    public static List<NavDrawerItem> getData() {
+    public static List<NavDrawerItem> getData(int rank) {
         List<NavDrawerItem> data = new ArrayList<>();
-
-
         // preparing navigation drawer items
-        for (int i = 0; i < titles.length; i++) {
+        for (int i = 0; i < titles[rank].length; i++) {
             NavDrawerItem navItem = new NavDrawerItem();
-            navItem.setTitle(titles[i]);
-            navItem.setIcon(icons.getDrawable(i));
+            navItem.setTitle(titles[rank][i]);
+            navItem.setIcon(icons[rank].getDrawable(i));
             data.add(navItem);
         }
         return data;
@@ -64,10 +62,14 @@ public class FragmentDrawer extends Fragment {
         super.onCreate(savedInstanceState);
 
         // drawer labels
-        titles = getActivity().getResources().getStringArray(R.array.nav_drawer_labels);
+        titles= new String[2][];
+        titles[0] = getActivity().getResources().getStringArray(R.array.nav_drawer_label1);
+        titles[1] = getActivity().getResources().getStringArray(R.array.nav_drawer_label2);
 
         // drawer icons
-        icons = getActivity().getResources().obtainTypedArray(R.array.nav_drawer_icons);
+        icons= new TypedArray[2];
+        icons[0] = getActivity().getResources().obtainTypedArray(R.array.nav_drawer_icon1);
+        icons[1] = getActivity().getResources().obtainTypedArray(R.array.nav_drawer_icon2);
     }
 
     @Override
@@ -75,12 +77,18 @@ public class FragmentDrawer extends Fragment {
                              Bundle savedInstanceState) {
         // Inflating view layout
         View layout = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
-        recyclerView = (RecyclerView) layout.findViewById(R.id.drawerList);
+        personalRecyclerView = (RecyclerView) layout.findViewById(R.id.drawerListOne);
+        generalRecyclerView =(RecyclerView) layout.findViewById(R.id.drawerListTwo);
 
-        adapter = new NavigationDrawerAdapter(getActivity(), getData());
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new ClickListener() {
+        adapter1 = new NavigationDrawerAdapter(getActivity(), getData(0));
+        adapter2= new NavigationDrawerAdapter(getActivity(), getData(1));
+        personalRecyclerView.setAdapter(adapter1);
+        generalRecyclerView.setAdapter(adapter2);
+
+        personalRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        generalRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        ClickListener aClickListener =new ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 drawerListener.onDrawerItemSelected(view, position);
@@ -91,7 +99,21 @@ public class FragmentDrawer extends Fragment {
             public void onLongClick(View view, int position) {
 
             }
-        }));
+        };
+        ClickListener anotherClickListener =new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                drawerListener.onDrawerItemSelected(view, position+5);
+                mDrawerLayout.closeDrawer(containerView);
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        };
+        personalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), personalRecyclerView, aClickListener));
+        generalRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), generalRecyclerView, anotherClickListener));
 
         return layout;
     }

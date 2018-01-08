@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
@@ -20,12 +21,24 @@
 
     </RelativeLayout>
 
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/drawerListOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_header_container"
+            android:layout_marginTop="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider">
+    </View>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/drawerList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/nav_header_container"
-        android:layout_marginTop="15dp" />
-    
-</RelativeLayout>
+            android:id="@+id/drawerListTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_header_container"
+            android:layout_marginTop="5dp" />
+
+</LinearLayout>

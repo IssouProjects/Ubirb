@@ -13,8 +13,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.issouprojects.ubirb.drawers.FragmentDrawer;
-import com.issouprojects.ubirb.fragments.HomeFragment;
-import com.issouprojects.ubirb.fragments.MapleChanFragment;
 import com.issouprojects.ubirb.fragments.MessagesFragment;
 import com.issouprojects.ubirb.fragments.MyCurrentTransactionsFragment;
 import com.issouprojects.ubirb.fragments.MyOffersFragment;
@@ -63,14 +61,14 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         if (extras != null) {
             String fragment = extras.getString("fragment");
             if(fragment.equals("messages")) {
-                displayView(2);
+                displayView(1);
             }
             else if(fragment.equals("monProfil")) {
-                displayView(1);
+                displayView(0);
             }
         }
         else {
-            displayView(0);
+            displayView(5);
         }
     }
 
@@ -96,24 +94,24 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
-                title = getString(R.string.title_home);
-                break;
-            case 1:
                 fragment = new MyProfileFragment();
                 title = getString(R.string.title_myprofile);
                 break;
-            case 2:
+            case 1:
                 fragment = new MessagesFragment();
                 title = getString(R.string.title_messages);
                 break;
-            case 3:
+            case 2:
                 fragment = new MyOffersFragment();
                 title = getString(R.string.title_myoffers);
                 break;
-            case 4:
+            case 3:
                 fragment = new MyRequestsFragment();
                 title = getString(R.string.title_myrequests);
+                break;
+            case 4:
+                fragment = new MyCurrentTransactionsFragment();
+                title = getString(R.string.title_mycurrenttransactions);
                 break;
             case 5:
                 fragment = new OffersFragment();
@@ -122,14 +120,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             case 6:
                 fragment = new RequestsFragment();
                 title = getString(R.string.title_requests);
-                break;
-            case 7:
-                fragment = new MyCurrentTransactionsFragment();
-                title = getString(R.string.title_mycurrenttransactions);
-                break;
-            case 8:
-                fragment = new MapleChanFragment();
-                title = getString(R.string.title_maplechan);
                 break;
             default:
                 break;

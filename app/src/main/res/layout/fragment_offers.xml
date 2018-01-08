@@ -653,6 +653,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="32dp"
                         android:layout_marginStart="32dp"
+                        android:focusable="false"
                         android:ems="10"
                         android:hint="Tapez votre recherche"
                         android:inputType="textPersonName"

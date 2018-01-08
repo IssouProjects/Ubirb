@@ -2,16 +2,17 @@
 <resources>
 
     <!-- navigation drawer item icons  -->
-    <integer-array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
+    <integer-array name="nav_drawer_icon1">
         <item>@drawable/bubulle_paul_dupont</item>
         <item>@drawable/ic_logo_message</item>
         <item>@drawable/logo_mesoffres</item>
         <item>@drawable/logo_mesdemandes</item>
+        <item>@drawable/ic_logo_echanges</item>
+    </integer-array>
+
+    <integer-array name="nav_drawer_icon2">
         <item>@drawable/ic_logo_offre_publique</item>
         <item>@drawable/ic_logo_demande_publiques</item>
-        <item>@drawable/ic_logo_echanges</item>
-        <item>@drawable/ic_logo_maplechan</item>
     </integer-array>
 
 </resources>

@@ -14,21 +14,21 @@
     <string name="nav_item_maplechan">MapleChan</string>
 
     <!-- navigation drawer item labels  -->
-    <string-array name="nav_drawer_labels">
-        <item>@string/nav_item_home</item>
+    <string-array name="nav_drawer_label1">
         <item>@string/nav_item_myprofile</item>
         <item>@string/nav_item_messages</item>
         <item>@string/nav_item_myoffers</item>
         <item>@string/nav_item_myrequests</item>
+        <item>@string/nav_item_mycurrenttransactions</item>
+    </string-array>
+
+    <string-array name="nav_drawer_label2">
         <item>@string/nav_item_offers</item>
         <item>@string/nav_item_requests</item>
-        <item>@string/nav_item_mycurrenttransactions</item>
-        <item>@string/nav_item_maplechan</item>
     </string-array>
 
     <string name="title_signup">Inscription</string>
     <string name="title_signin">Connexion</string>
-    <string name="title_home">Accueil</string>
     <string name="title_myprofile">Mon profil</string>
     <string name="title_messages">Messages</string>
     <string name="title_myoffers">Mes offres</string>
