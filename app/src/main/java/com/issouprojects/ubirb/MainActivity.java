@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         if (extras != null) {
             String fragment = extras.getString("fragment");
             if(fragment.equals("messages")) {
-                displayView(2);
+                displayView(1);
             }
             else if(fragment.equals("monProfil")) {
-                displayView(1);
+                displayView(0);
             }
         }
         else {
