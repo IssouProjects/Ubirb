@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -16,6 +17,7 @@ import com.issouprojects.ubirb.R;
 public class OfferDetails extends AppCompatActivity {
 
     private ImageButton back;
+    private Button message;
 
     private ImageView jeanClaudius;
 
@@ -27,6 +29,7 @@ public class OfferDetails extends AppCompatActivity {
 
         back = (ImageButton) findViewById(R.id.back);
         jeanClaudius = (ImageView) findViewById(R.id.imgJean);
+        message = (Button) findViewById(R.id.button3);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +42,14 @@ public class OfferDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OfferDetails.this, PublicProfile.class);
+                startActivity(intent);
+            }
+        });
+
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OfferDetails.this, RequestNewMessages.class);
                 startActivity(intent);
             }
         });
