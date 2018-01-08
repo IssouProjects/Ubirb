@@ -26,11 +26,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/nav_header_container"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="5dp" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="5dp"
+        android:layout_height="2dp"
         android:background="@drawable/divider">
     </View>
 
@@ -39,6 +39,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/nav_header_container"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="5dp" />
 
 </LinearLayout>
