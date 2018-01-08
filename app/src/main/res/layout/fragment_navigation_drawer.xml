@@ -28,6 +28,12 @@
             android:layout_below="@id/nav_header_container"
             android:layout_marginTop="15dp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/divider">
+    </View>
+
     <android.support.v7.widget.RecyclerView
             android:id="@+id/drawerListTwo"
             android:layout_width="match_parent"
