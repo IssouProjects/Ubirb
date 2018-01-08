@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.issouprojects.ubirb.R;
-import com.issouprojects.ubirb.RequestMessages;
+import com.issouprojects.ubirb.activities.RequestMessages;
 
 
 public class MessagesFragment extends Fragment {
