@@ -15,7 +15,6 @@
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_label1">
-        <item>@string/nav_item_home</item>
         <item>@string/nav_item_myprofile</item>
         <item>@string/nav_item_messages</item>
         <item>@string/nav_item_myoffers</item>
@@ -30,7 +29,6 @@
 
     <string name="title_signup">Inscription</string>
     <string name="title_signin">Connexion</string>
-    <string name="title_home">Accueil</string>
     <string name="title_myprofile">Mon profil</string>
     <string name="title_messages">Messages</string>
     <string name="title_myoffers">Mes offres</string>

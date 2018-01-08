@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.issouprojects.ubirb.drawers.FragmentDrawer;
-import com.issouprojects.ubirb.fragments.HomeFragment;
 import com.issouprojects.ubirb.fragments.MessagesFragment;
 import com.issouprojects.ubirb.fragments.MyCurrentTransactionsFragment;
 import com.issouprojects.ubirb.fragments.MyOffersFragment;
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         drawerFragment.setDrawerListener(this);
 
         // display the first navigation drawer view on app launch
-        displayView(0);
+        displayView(5);
     }
 
 
@@ -69,34 +68,30 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
-                fragment = new HomeFragment();
-                title = getString(R.string.title_home);
-                break;
-            case 1:
                 fragment = new MyProfileFragment();
                 title = getString(R.string.title_myprofile);
                 break;
-            case 2:
+            case 1:
                 fragment = new MessagesFragment();
                 title = getString(R.string.title_messages);
                 break;
-            case 3:
+            case 2:
                 fragment = new MyOffersFragment();
                 title = getString(R.string.title_myoffers);
                 break;
-            case 4:
+            case 3:
                 fragment = new MyRequestsFragment();
                 title = getString(R.string.title_myrequests);
                 break;
-            case 5:
+            case 4:
                 fragment = new MyCurrentTransactionsFragment();
                 title = getString(R.string.title_mycurrenttransactions);
                 break;
-            case 6:
+            case 5:
                 fragment = new OffersFragment();
                 title = getString(R.string.title_offers);
                 break;
-            case 7:
+            case 6:
                 fragment = new RequestsFragment();
                 title = getString(R.string.title_requests);
                 break;

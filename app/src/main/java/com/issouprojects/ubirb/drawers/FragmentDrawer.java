@@ -103,7 +103,7 @@ public class FragmentDrawer extends Fragment {
         ClickListener anotherClickListener =new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                drawerListener.onDrawerItemSelected(view, position+6);
+                drawerListener.onDrawerItemSelected(view, position+5);
                 mDrawerLayout.closeDrawer(containerView);
             }
 

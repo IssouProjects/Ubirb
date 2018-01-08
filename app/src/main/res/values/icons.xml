@@ -3,7 +3,6 @@
 
     <!-- navigation drawer item icons  -->
     <integer-array name="nav_drawer_icon1">
-        <item>@drawable/ic_home</item>
         <item>@drawable/bubulle_paul_dupont</item>
         <item>@drawable/ic_logo_message</item>
         <item>@drawable/logo_mesoffres</item>
