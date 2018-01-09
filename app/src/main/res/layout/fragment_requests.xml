@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Besoin d'un chargeur, le mien viens de lâcher, nor..."
+                    android:text="Besoin d'un chargeur, le mien vient de lâcher, nor..."
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
