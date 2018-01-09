@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Mot de passe"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPassword" />
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
